@@ -22,9 +22,8 @@ export class ChargingStationInfo extends React.Component {
   render() {
     return (
         <div>
-          {this.state.charging_stations.map(obj =>
-              <p key={obj.id}>{obj.name}</p>
-
+          {this.state.charging_stations.map(station =>
+              <p key={station.id}>{station.name}</p>
           )}
         </div>
     )
